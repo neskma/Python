@@ -63,7 +63,7 @@ def delete_note():
             for note in notes:
                 writer.writerow([note["id"], note["name"], note["text"], 
                                   note["created_time"], note["last_edited_time"]])
-        print(f"Note {note_id} deleted.")
+        print(f"Заметка {note_id} удалена.")
     else:
         print("Заметка не найдена.")
 
